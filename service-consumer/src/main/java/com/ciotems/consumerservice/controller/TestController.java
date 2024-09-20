@@ -1,7 +1,7 @@
 package com.ciotems.consumerservice.controller;
 
 import com.alibaba.fastjson2.JSON;
-import com.ciotems.consumerservice.configuration.CiotemsConfig;
+import com.ciotems.consumerservice.configuration.ConsumerConfig;
 import com.ciotems.consumerservice.service.EchoService;
 import jakarta.annotation.Resource;
 import org.springframework.core.env.Environment;
@@ -17,7 +17,7 @@ public class TestController {
     @Resource
     private EchoService echoService;
     @Resource
-    private CiotemsConfig ciotemsConfig;
+    private ConsumerConfig consumerConfig;
     @Resource
     private Environment environment;
 
@@ -26,7 +26,7 @@ public class TestController {
     public String ciotemsConfig() {
 //        String env = environment.getProperty("ciotems.name");
 
-        return JSON.toJSONString(ciotemsConfig);
+        return JSON.toJSONString(consumerConfig);
     }
 
     @GetMapping(value = "/echo-rest/{str}")

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ciotems</groupId>
-        <artifactId>spring-cloud-ciotems</artifactId>
+        <artifactId>spring-cloud-hgy</artifactId>
         <version>0.0.1</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
