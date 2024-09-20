@@ -18,7 +18,7 @@ spring:
        discovery:
         server-addr: 127.0.0.1:8848
 
-# knife4j???????????????
+# knife4j
 knife4j:
   enable: true
   cors: false

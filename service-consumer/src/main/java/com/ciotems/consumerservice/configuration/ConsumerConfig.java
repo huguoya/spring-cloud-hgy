@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-@ConfigurationProperties(prefix = "hgy.consumer")
+@ConfigurationProperties(prefix = "ciotems")
 //@NacosConfigurationProperties(dataId = "service-consumer.yaml", prefix = "ciotems", autoRefreshed = true)
 @Component
 @Data

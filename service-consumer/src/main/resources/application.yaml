@@ -12,9 +12,9 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
   config:
-    import: nacos:service-consumer.yaml?refreshEnabled=true
+    import: nacos:static/service-consumer.yaml
 
-# knife4j???????????????
+# knife4j
 knife4j:
   enable: true
   cors: false
