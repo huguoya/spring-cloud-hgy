@@ -1,0 +1,47 @@
+server:
+  port: 18083
+spring:
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+#        import-check:
+#          enabled: false
+      discovery:
+        server-addr: 127.0.0.1:8848
+  config:
+    import: nacos:service-consumer.yaml?refreshEnabled=true
+
+# knife4j???????????????
+knife4j:
+  enable: true
+  cors: false
+  production: false
+  basic:
+    enable: false
+    username: ciotems
+    password: AWDdEFFGG@12
+  setting:
+    language: zh-CN
+    enable-swagger-models: true
+    enable-document-manage: true
+    swagger-model-name: entity
+    enable-version: true
+    enable-reload-cache-parameter: false
+    enable-after-script: true
+    enable-filter-multipart-api-method-type: POST
+    enable-filter-multipart-apis: false
+    enable-request-cache: true
+    enable-host: false
+    enable-host-text: 192.168.1.1=8080
+    enable-home-custom: true
+    enable-search: true
+    enable-footer: true
+    enable-footer-custom: true
+    footer-custom-content: Copyright|2012-2023|CETETECH|CIOTEMS
+    enable-dynamic-parameter: true
+    enable-debug: true
+    enable-open-api: false
+    enable-group: true
