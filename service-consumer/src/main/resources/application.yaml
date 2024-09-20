@@ -1,18 +1,20 @@
 server:
   port: 18083
 spring:
+  profiles:
+    active: dev
   application:
     name: service-consumer
   cloud:
     nacos:
       config:
         server-addr: 127.0.0.1:8848
-#        import-check:
-#          enabled: false
       discovery:
         server-addr: 127.0.0.1:8848
   config:
-    import: nacos:static/service-consumer.yaml
+    import:
+      - nacos:service-consumer.yaml?refreshEnabled=true
+      - nacos:service-consumer-dev.yaml?refreshEnabled=true
 
 # knife4j
 knife4j:
