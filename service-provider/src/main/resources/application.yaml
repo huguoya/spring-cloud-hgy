@@ -16,8 +16,12 @@ spring:
          import-check:
            enabled: false
        discovery:
-        server-addr: 127.0.0.1:8848
-
+         server-addr: 127.0.0.1:8848
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main
+    add-properties: true
 # knife4j
 knife4j:
   enable: true

@@ -15,7 +15,11 @@ spring:
     import:
       - nacos:service-consumer.yaml?refreshEnabled=true
       - nacos:service-consumer-dev.yaml?refreshEnabled=true
-
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main
+    add-properties: true
 # knife4j
 knife4j:
   enable: true
