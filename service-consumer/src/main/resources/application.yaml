@@ -5,16 +5,16 @@ spring:
     active: dev
   application:
     name: service-consumer
-  cloud:
-    nacos:
-      config:
-        server-addr: 127.0.0.1:8848
-      discovery:
-        server-addr: 127.0.0.1:8848
-  config:
-    import:
-      - nacos:service-consumer.yaml?refreshEnabled=true
-      - nacos:service-consumer-dev.yaml?refreshEnabled=true
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 127.0.0.1:8848
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#  config:
+#    import:
+#      - nacos:service-consumer.yaml?refreshEnabled=true
+#      - nacos:service-consumer-dev.yaml?refreshEnabled=true
   devtools:
     restart:
       enabled: true
@@ -51,3 +51,6 @@ knife4j:
     enable-debug: true
     enable-open-api: false
     enable-group: true
+ciotems:
+  api:
+    test: http://localhost:18085/

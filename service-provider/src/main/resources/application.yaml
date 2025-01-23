@@ -1,22 +1,22 @@
 server:
-  port: 18082
+  port: 18085
 
 spring:
   application:
     name: service-provider
-  cloud:
-     loadbalancer:
-       ribbon:
-         enabled: false
-       nacos:
-         enabled: true
-     nacos:
-       server-addr: 127.0.0.1:8848
-       config:
-         import-check:
-           enabled: false
-       discovery:
-         server-addr: 127.0.0.1:8848
+#  cloud:
+#     loadbalancer:
+#       ribbon:
+#         enabled: false
+#       nacos:
+#         enabled: true
+#     nacos:
+#       server-addr: 127.0.0.1:8848
+#       config:
+#         import-check:
+#           enabled: false
+#       discovery:
+#         server-addr: 127.0.0.1:8848
   devtools:
     restart:
       enabled: true

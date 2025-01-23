@@ -36,6 +36,7 @@ public class TestController {
 
     @GetMapping(value = "/echo-feign")
     public String feign(@RequestParam String str) {
+
         return echoService.echo(str);
     }
 }
